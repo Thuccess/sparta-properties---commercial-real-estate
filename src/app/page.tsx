@@ -34,7 +34,6 @@ export default function Home() {
             alt="Commercial High-rise" 
             className="w-full h-full object-cover"
             loading="eager"
-            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-corporate-navy via-corporate-navy/40 to-transparent"></div>
         </div>
