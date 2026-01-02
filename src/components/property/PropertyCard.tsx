@@ -12,8 +12,8 @@ interface PropertyCardProps {
 }
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
-  const isLeased = property.status === ListingStatus.LEASED || property.status === 'Leased';
-  const isSold = property.status === ListingStatus.SOLD || property.status === 'Sold';
+  const isLeased = property.status === ListingStatus.LEASED;
+  const isSold = property.status === ListingStatus.SOLD;
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -67,7 +67,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
             transition={{ delay: 0.2 }}
             className={`px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-white shadow-lg ${
               isLeased || isSold ? 'bg-red-600/90' : 
-              property.status === 'For sale' ? 'bg-green-600/90' : 
+              property.status === ListingStatus.FOR_SALE ? 'bg-green-600/90' : 
               'bg-corporate-navy/90'
             } backdrop-blur-sm`}
           >

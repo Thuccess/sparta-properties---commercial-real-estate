@@ -22,7 +22,7 @@ export interface Property {
   location: string;
   district?: string;
   price: string;
-  priceType: 'per sqm' | 'total' | 'negotiable';
+  priceType: 'per sqm' | 'per month' | 'total' | 'negotiable';
   type: PropertyType;
   sqm?: number;
   size?: string; // e.g., "33 Decimals"
