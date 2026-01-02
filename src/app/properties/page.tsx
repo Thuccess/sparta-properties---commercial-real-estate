@@ -119,7 +119,7 @@ export default function Properties() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 sm:gap-6">
             <div className="flex-grow max-w-xl relative group">
-              <Search className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-gray-300 group-focus-within:text-corporate-blue transition-colors" size={16} className="sm:w-[18px] sm:h-[18px]" />
+              <Search className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-gray-300 group-focus-within:text-corporate-blue transition-colors" width={16} height={16} />
               <input 
                 type="text" 
                 placeholder="Quick keyword search..." 
@@ -207,7 +207,6 @@ export default function Properties() {
                     setMinSize('');
                     setSizeUnit('Decimals');
                     setKeyword('');
-                    setSearchQuery('');
                   }}
                 />
               </div>
@@ -267,7 +266,6 @@ export default function Properties() {
                   setMinSize('');
                   setSizeUnit('Decimals');
                   setKeyword('');
-                  setSearchQuery('');
                 }}
                 className="bg-white border-2 border-corporate-navy text-corporate-navy px-10 py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-corporate-slate transition-all"
               >
